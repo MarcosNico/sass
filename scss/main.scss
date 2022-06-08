@@ -1,0 +1,40 @@
+.header{
+    background-color: aqua;
+  & &__logo{
+        width: 100px;
+    }
+    & &__menu{
+        display: inline;
+        ul{
+            list-style: none;
+            li{
+                padding: 10px;
+                a{
+                    color: red;
+                    &:hover{
+                        color: green;
+                    }
+                }
+            }
+        }
+    }
+}
+//comentarios que no compila//
+/*comentario que compila*/
+
+section{
+    background-color: aqua;
+    h2{
+        font{
+            family: sans-serif;
+            size: 30px;
+            weight: 700;
+        }
+    }
+    div{
+        border: 1px solid black;
+        p{
+            color: tomato;
+        }
+    }
+}

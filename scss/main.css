@@ -1,0 +1,47 @@
+.header {
+  background-color: aqua;
+}
+
+.header .header__logo {
+  width: 100px;
+}
+
+.header .header__menu {
+  display: inline;
+}
+
+.header .header__menu ul {
+  list-style: none;
+}
+
+.header .header__menu ul li {
+  padding: 10px;
+}
+
+.header .header__menu ul li a {
+  color: red;
+}
+
+.header .header__menu ul li a:hover {
+  color: green;
+}
+
+/*comentario que compila*/
+section {
+  background-color: aqua;
+}
+
+section h2 font {
+  family: sans-serif;
+  size: 30px;
+  weight: 700;
+}
+
+section div {
+  border: 1px solid black;
+}
+
+section div p {
+  color: tomato;
+}
+/*# sourceMappingURL=main.css.map */
