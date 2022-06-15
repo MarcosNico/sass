@@ -1,0 +1,97 @@
+/* estilos de la PC de escritorio*/
+@media screen and (min-width:1280px) {
+	body {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "section section section section" "footer footer footer footer";
+	}
+	header {
+		grid-area: header;
+		img {
+			display: flex;
+			justify-content: center;
+			width: 35rem;
+			height: 25rem;
+			margin-top: -7rem;
+			margin-bottom: -5rem;
+		}
+	}
+	nav {
+		grid-area: nav;
+	}
+	main {
+		grid-area: main;
+	}
+	section {
+		grid-area: section;
+	}
+	footer {
+		grid-area: footer;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: sans-serif;
+	}
+	.contenedor {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		figure {
+			position: relative;
+			height: 250px;
+			cursor: pointer;
+			width: 350px;
+			overflow: hidden;
+			border-radius: 6px;
+			box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+			img {
+				width: 100%;
+				height: 100%;
+				transition: all 400ms ease-out;
+				will-change: transform;
+			}
+			.capa {
+				position: absolute;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,103,123,0.7);
+				transition: all 400ms ease-out;
+				opacity: 0;
+				visibility: hidden;
+				text-align: center;
+				h3 {
+					color: #fff;
+					font-weight: 400;
+					margin-bottom: 120px;
+					transition: all 400ms ease-out;
+					margin-top: 30px;
+				}
+				p {
+					color: #fff;
+					font-size: 15px;
+					line-height: 1.5;
+					width: 100%;
+					max-width: 220px;
+					margin: auto;
+				}
+			}
+			&:hover {
+				>.capa {
+					opacity: 1;
+					visibility: visible;
+					h3 {
+						margin-top: 70px;
+						margin-bottom: 15px;
+					}
+				}
+				>img {
+					transform: scale(1.3);
+				}
+			}
+		}
+	}
+}
